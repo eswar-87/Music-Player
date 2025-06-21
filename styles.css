@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(73, 60, 103);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*sidebar section starts here*/
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #43095c;
+    padding: 25px;
+}
+.sidebar .logo img{
+    width: 50px;
+}
+.logo {
+    font-size:50px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+.logo p{
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 25px;
+}
+.sidebar .navigation ul{
+    list-style: none;
+    margin-top: 25px;
+}
+.sidebar .navigation ul li img{
+    width: 25px;
+    padding-left: 15px;
+}
+
+.sidebar .navigation ul li{
+    padding: 10px 0px;
+    display: flex;
+    padding-left: 20px;
+
+}
+.sidebar .navigation ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.sidebar .navigation ul li a:hover{
+    color: white;
+    font-size: 30px;
+}
+.sidebar .polices {
+    position: absolute;
+    bottom: 50px;
+}
+.sidebar .polices ul{
+    list-style: none;
+}
+.sidebar .polices ul li{
+    padding-bottom: 10px;
+    padding-left: 20px;  
+    font-weight: 400;  
+
+}
+.sidebar .polices ul li a{
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+}
+.sidebar .polices ul li a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+/*sidebar section ends here */
+
+/*container section starts here*/
+
+.container
+{
+    margin-left: 220px;
+    margin-bottom: 100px;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #622895;
+    padding: 15px 3opx;
+
+}
+.topbar .navbar{
+    display: flex;
+    align-items: center;
+}
+.topbar .navbar ul{
+    list-style: none;
+}
+.topbar .navbar ul li{
+    display: inline-block;
+    margin: 0px 9px;
+    width: 75px;
+}
+.topbar .navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.topbar .navbar ul li a:hover{
+    color:white;
+    font-size: 17px;
+}
+.topbar .navbar button{
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.topbar .navbar button:hover{
+    background-color: rgb(188, 178, 190);
+    color: red;
+}
+/*container section ends here*/
+
+/*playlists section starts here */
+
+
+.playlists {
+    padding: 20px 40px;
+    background-color: rgb(141, 31, 171);
+    margin-left: 100px;
+}
+.playlists h2{
+    color: white;
+    margin-bottom: 22px;
+}
+.playlists .list{
+    display: flex;
+    gap: 20px;
+
+    
+}
+.playlists .list .item{
+    min-width: 140px;
+    height:fit-content;
+    padding: 15px;
+    background-color: #6c3491;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.playlists .list .item:hover{
+    background-color: #43095c;
+}
+.playlists .list .item img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.playlists .list .item .play{
+    position: relative;
+}
+
+.playlists .list .item .play{
+    position: absolute-left;
+    width: 30px;
+    padding: 18px;
+    opacity: 0;
+}
+
+.playlists .list .item:hover .play{
+    opacity: 1;
+}
+.playlists .list .item h4{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/*playlists section ends here */
